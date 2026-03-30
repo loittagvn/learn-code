@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Learn HTML</h1>
+
+  <div class="card" onclick="go('level.html')">📘 Learn</div>
+  <div class="card" onclick="go('editor.html')">💻 Playground</div>
+  <div class="card" onclick="go('profile.html')">👤 Profile</div>
+
+  <br>
+  <button onclick="setTheme('dark')">Dark</button>
+  <button onclick="setTheme('light')">Light</button>
+  <button onclick="setLang('vi')">VI</button>
+  <button onclick="setLang('en')">EN</button>
+</div>
+
+<div class="bottom-nav">
+  <div onclick="go('index.html')">📘</div>
+  <div onclick="go('editor.html')">&lt;/&gt;</div>
+  <div onclick="go('profile.html')">👤</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

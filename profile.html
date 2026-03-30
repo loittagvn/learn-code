@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Profile</h2>
+
+  <div class="card">Lessons: <span id="l"></span></div>
+
+</div>
+
+<div class="bottom-nav">
+  <div onclick="go('index.html')">📘</div>
+  <div onclick="go('editor.html')">&lt;/&gt;</div>
+  <div>👤</div>
+</div>
+
+<script src="app.js"></script>
+<script>
+document.getElementById('l').innerText = getProgress('lesson');
+</script>
+
+</body>
+</html>
